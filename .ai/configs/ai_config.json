@@ -1,0 +1,53 @@
+{
+  "aiEditor": {
+    "completion": {
+      "enabled": true,
+      "autoTrigger": true,
+      "debounceTime": 150,
+      "maxSuggestions": 10,
+      "showDetails": true,
+      "usePrefixMatching": true,
+      "useFuzzyMatching": false,
+      "providers": ["openai", "codex"]
+    },
+    "refactoring": {
+      "enabled": true,
+      "autoApply": false,
+      "confirmChanges": true,
+      "codeLensEnabled": true,
+      "triggers": ["onSave", "onDemand"],
+      "include": ["**/*.{js,jsx,ts,tsx}"],
+      "exclude": ["**/node_modules/**", "**/dist/**"]
+    },
+    "codeReview": {
+      "enabled": true,
+      "autoRun": true,
+      "runInterval": "onSave",
+      "severityLevels": {
+        "performance": "warning",
+        "security": "error",
+        "style": "suggestion",
+        "bugRisk": "warning"
+      },
+      "rulesets": ["eslint-recommended", "security-rules", "performance-rules"]
+    },
+    "prompting": {
+      "defaultPromptsFile": ".ai/prompts/default_prompts.md",
+      "promptTemplatesDir": ".ai/prompts/templates",
+      "historyEnabled": true,
+      "maxHistoryEntries": 50
+    },
+    "security": {
+      "dataPrivacyEnabled": true,
+      "telemetryEnabled": false,
+      "codeSnippetLengthLimit": 150
+    },
+    "advanced": {
+      "modelSelectionStrategy": "auto",
+      "fallbackModel": "gpt-3.5-turbo",
+      "temperature": 0.2,
+      "topP": 0.9,
+      "maxTokens": 512
+    }
+  }
+}
