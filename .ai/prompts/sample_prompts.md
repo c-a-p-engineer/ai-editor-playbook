@@ -28,6 +28,7 @@
 以下の条件の環境を構築してください。
 
 - 最新のバージョンのPython
+- Dokcer、もしくはDockerComposeを使用する
 - DevContainer環境
   - Python開発に必要なプラグインを追加
   - Python環境に適した設定
