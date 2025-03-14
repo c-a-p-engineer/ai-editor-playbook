@@ -1,10 +1,13 @@
 {
-  "name": "Python Dev Container",
-  "image": "ubuntu:22.04",
+  "name": "AI Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:bullseye",
   "features": {
     "ghcr.io/devcontainers/features/python": {
-      "version": "3.11",
+      "version": "latest",
       "installPackages": true
+    },
+    "ghcr.io/devcontainers/features/node": {
+      "version": "latest"
     }
   },
   "customizations": {

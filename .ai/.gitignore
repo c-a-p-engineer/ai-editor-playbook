@@ -1,0 +1,4 @@
+/memories/*
+!/memories/README.md
+/tasks/*
+!/tasks/README.md

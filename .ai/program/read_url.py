@@ -21,6 +21,31 @@ def format_text(soup):
 
     return '\n'.join(formatted_lines)
 
+def extract_text_from_url(url, keep_tags=False, max_chars=None):
+    """
+    指定された URL に接続し、Web ページからテキスト情報を抽出する。
+    スクリプトやスタイルタグの除去も行う。
+    """
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        if not keep_tags:
+            # 不要なタグを削除
+            for tag in soup(["script", "style", "header", "footer", "nav", "aside"]):
+                tag.decompose()
+
+        text = format_text(soup) # Use format_text for formatting
+
+        if max_chars is not None:
+            text = text[:max_chars]
+
+        return text
+    except Exception as e:
+        print(f"URL取得エラー: {url}\\nエラー: {e}")
+        return ""
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
