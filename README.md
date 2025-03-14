@@ -84,9 +84,8 @@
 
 1.  既存のGitリポジトリのルートディレクトリで、以下のコマンドを実行し、このプロジェクトをサブモジュールとして追加します。
     ```bash
-    git submodule add <このプロジェクトのリポジトリURL> .ai
+    git submodule add https://github.com/c-a-p-engineer/ai-editor-playbook .ai
     ```
-    -   `<このプロジェクトのリポジトリURL>` には、このプロジェクトのリポジトリURL (例: `https://github.com/username/ai-editor-playbook.git`) を指定してください。
     -   `.ai` はサブモジュールを配置するディレクトリ名です。必要に応じて変更してください。
 2.  サブモジュールとして追加されたコードを、既存のプロジェクトのコードから利用します。
     -   必要に応じて、ファイルパスやモジュールimport文を調整してください。
