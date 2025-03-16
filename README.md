@@ -1,8 +1,13 @@
-# AIエディター プレイブック リポジトリテンプレート
+# AIエディター プレイブック リポジトリテンプレート　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
+[![GitHub stars](https://img.shields.io/github/stars/c-a-p-engineer/ai-editor-playbook?style=social)](https://github.com/c-a-p-engineer/ai-editor-playbook/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 推奨環境
 
 -   Python 3.10+ がインストールされている環境 (一部 Cline のプログラミング機能で使用)
+
+---
 
 ## リポジトリの説明
 
@@ -22,10 +27,15 @@
 │    ├─ review_feedback.md   // レビュー・フィードバックルール
 │    └─ ci_cd.md             // CI/CD連携ルール（インテグレーションテスト等含む）
 ├─ coding/
-│    ├─ ts.md                // TypeScript向けコーディング規約
-│    ├─ py.md                // Python向けコーディング規約
-│    ├─ js.md                // JavaScript向けコーディング規約
-│    └─ ...                  // 必要に応じたその他言語のルール
+│    ├─ css.md                // CSS向けコーディング規約
+│    ├─ docker.md             // Dockerfile向けコーディング規約
+│    ├─ html.md               // HTML向けコーディング規約
+│    ├─ javascript.md         // JavaScript向けコーディング規約
+│    ├─ php.md                // PHP向けコーディング規約
+│    ├─ python.md             // Python向けコーディング規約
+│    ├─ scss.md               // SCSS向けコーディング規約
+│    ├─ typescript.md         // TypeScript向けコーディング規約
+│    └─ ...                   // 必要に応じたその他言語のルール
 ├─ configs/
 │    └─ ai_config.json       // AIエディターの動作設定ファイル
 └─ prompts/
@@ -40,14 +50,25 @@
   - `performance.md`: パフォーマンス・最適化ルール
   - `review_feedback.md`: レビュー・フィードバックルール
   - `ci_cd.md`: CI/CD連携ルール（インテグレーションテスト等含む）
+- **.ai/guidelines/**: AIエディターの利用に関するガイドラインを記述したMarkdownファイル群です。
+  - `ai_editor.md`: AIエディター全体の基本ガイドライン
+  - `security.md`: セキュリティルール
+  - `performance.md`: パフォーマンス・最適化ルール
+  - `review_feedback.md`: レビュー・フィードバックルール
+  - `ci_cd.md`: CI/CD連携ルール（インテグレーションテスト等含む）
 - **.ai/coding/**: 各プログラミング言語のコーディング規約を記述したMarkdownファイル群です。
-  - `ts.md`: TypeScript向けコーディング規約
-  - `py.md`: Python向けコーディング規約
-  - `js.md`: JavaScript向けコーディング規約
+  - `css.md`: CSS向けコーディング規約
+  - `docker.md`: Dockerfile向けコーディング規約
+  - `html.md`: HTML向けコーディング規約
+  - `javascript.md`: JavaScript向けコーディング規約
+  - `php.md`: PHP向けコーディング規約
+  - `python.md`: Python向けコーディング規約
+  - `scss.md`: SCSS向けコーディング規約
+  - `typescript.md`: TypeScript向けコーディング規約
   - `...`: 必要に応じたその他言語のルール
 - **.ai/configs/**: AIエディターの設定ファイルを格納するディレクトリです。
   - `ai_config.json`: AIエディターの動作設定ファイル
-  - **.ai/prompts/**: AIエディターで使用するプロンプトテンプレートを格納するディレクトリです。
+- **.ai/prompts/**: AIエディターで使用するプロンプトテンプレートを格納するディレクトリです。
   - `default_prompts.md`: デフォルトのプロンプトテンプレート集
 
 ## 利用方法
@@ -99,3 +120,9 @@
 
 -   各利用方法において、ファイルパスや設定、依存関係などは、プロジェクトの構成や目的に応じて適宜調整してください。
 -   Gitモジュールとして組み込む場合は、サブモジュールの管理方法 (初期化、更新、コミットなど) について、Gitのドキュメントをご確認ください。
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
